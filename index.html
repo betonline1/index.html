@@ -2,21 +2,63 @@
 <html>
 <head>
   <title>Kredi Kartı Ödeme Sayfası</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>Kredi Kartı Ödeme Sayfası</h1>
+  <div class="container">
+    <h1>Kredi Kartı Ödeme Sayfası</h1>
 
-  <form action="odeme_islemi.php" method="post">
-    <label for="kart-numarasi">Kart Numarası:</label>
-    <input type="text" id="kart-numarasi" name="kart-numarasi" required>
+    <form action="odeme_islemi.php" method="post">
+      <div class="form-group">
+        <label for="kart-numarasi">Kart Numarası:</label>
+        <input type="text" id="kart-numarasi" name="kart-numarasi" required>
+      </div>
 
-    <label for="son-kullanma-tarihi">Son Kullanma Tarihi:</label>
-    <input type="text" id="son-kullanma-tarihi" name="son-kullanma-tarihi" required>
+      <div class="form-group">
+        <label for="son-kullanma-tarihi">Son Kullanma Tarihi:</label>
+        <input type="text" id="son-kullanma-tarihi" name="son-kullanma-tarihi" required>
+      </div>
 
-    <label for="cvv">CVV:</label>
-    <input type="text" id="cvv" name="cvv" required>
+      <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+      </div>
 
-    <input type="submit" value="Ödemeyi Tamamla">
-  </form>
+      <input type="submit" value="Ödemeyi Tamamla">
+    </form>
+  </div>
 </body>
 </html>
