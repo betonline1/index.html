@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kredi Kartı Ödeme Sayfası</title>
+</head>
+<body>
+  <h1>Kredi Kartı Ödeme Sayfası</h1>
+
+  <form action="odeme_islemi.php" method="post">
+    <label for="kart-numarasi">Kart Numarası:</label>
+    <input type="text" id="kart-numarasi" name="kart-numarasi" required>
+
+    <label for="son-kullanma-tarihi">Son Kullanma Tarihi:</label>
+    <input type="text" id="son-kullanma-tarihi" name="son-kullanma-tarihi" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+
+    <input type="submit" value="Ödemeyi Tamamla">
+  </form>
+</body>
+</html>
